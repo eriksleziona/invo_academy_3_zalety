@@ -123,8 +123,12 @@
         & &__banner {
             display: flex;
             flex-direction: column;
-            gap: 16px;
+            gap: 8px;
             height: auto;
+        }
+
+        & &__banner-title {
+            margin-top: 16px;
         }
     
         & &__banner-desc {
