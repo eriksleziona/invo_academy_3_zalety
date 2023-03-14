@@ -84,6 +84,14 @@
         height: auto;
     }
 
+    & &__btn-link:hover {
+        color: var(--btn-link-color)
+    }
+    & &__btn-link:visited {
+        color: var(--btn-link-color);
+        background-color:  var(--btn-link-active-color);
+    }
+
     & &__btn-link {
         display: flex;
         gap: 6px;
@@ -92,9 +100,7 @@
         text-decoration: none;
     }
 
-    & &__btn-link:hover {
-        color: var(--btn-link-color);
-    }
+   
     
     @media (max-width:992px) {
         padding: 120px 41px 106px 41px;
