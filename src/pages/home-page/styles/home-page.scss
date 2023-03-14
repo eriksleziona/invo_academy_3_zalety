@@ -84,6 +84,17 @@
         height: auto;
     }
 
+    & &__btn-link {
+        align-items: center;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    & &__btn-link:link {
+        color: #000;
+        background-color: #FFF;
+    }
+
     & &__btn-link:hover {
         color: var(--btn-link-color)
     }
@@ -92,15 +103,6 @@
         background-color:  var(--btn-link-active-color);
     }
 
-    & &__btn-link {
-        display: flex;
-        gap: 6px;
-        align-items: center;
-        font-size: 12px;
-        text-decoration: none;
-    }
-
-   
     
     @media (max-width:992px) {
         padding: 120px 41px 106px 41px;
