@@ -5,13 +5,17 @@
 @import '../../../global-styles/style.scss';
 
 .home-page-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 16px;
     margin:  0 auto;
-    max-width: 1440px;    
+    max-width: 1440px;
+    padding: 180px 152px 174px 152px;    
     height: auto;
+    & &__wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+    }
+
     & &__card {
         width: 304px;
         height: auto;
@@ -44,11 +48,17 @@
         font-size: 32px;
         font-weight: bold;
         letter-spacing: 0;
+        line-height: 38px;
+        margin-top: 24px;
+        margin-bottom: 0;
     }
 
     & &__banner-desc {
         font-size: 16px;
         letter-spacing: 0;
+        line-height: 22px;
+        margin-bottom: 24px;
+        font-weight: 400;
     }
 
     & &__btn {
@@ -57,7 +67,22 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 132px;
-        height: 48px;
+        border-radius: 200px;
+        gap: 6px;
+        padding: 14px 19px 15px 24px;
+        width: 89px;
+        height: auto;
+    }
+
+    & &__btn-link {
+        font-size: 12px;
+        text-decoration: none;
+    }
+    & &__btn-link:hover {
+        color: var(--btn-link-color);
+    }
+    
+    & &__btn-link:visited {
+        color: var(--btn-link-color);
     }
 }
