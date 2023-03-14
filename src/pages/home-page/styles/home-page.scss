@@ -76,12 +76,17 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-top: auto;
+
         border-radius: 200px;
         gap: 6px;
         padding: 14px 19px 15px 24px;   
         width: 89px;
         height: auto;
+    }
+
+    & &__btn-wrapper {
+        margin-top: auto;
+        margin-bottom: 0;
     }
 
     & &__btn-link {
