@@ -1,0 +1,172 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+/// 
+
+@import '../../../global-styles/style.scss';
+
+.home-page-container {
+    margin:  0 auto;
+    max-width: 1440px;
+    padding: 180px 20px 174px 20px;    
+    height: auto;
+    & &__wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    & &__card {
+        display: flex;
+        flex-direction: column;
+        width:  304px;
+        height: auto;
+        border-radius: 12px;
+        padding: 32px;
+        background-color: var(--card-color-one);
+    }
+    & &__card--bg-green {background-color: var(--card-bg-color-one);}
+    & &__card--bg-blue {background-color: var(--card-bg-color-two);}
+    & &__card--bg-yellow {background-color: var(--card-bg-color-three);}
+
+    & &__icon {
+        position: relative;
+        width: 72px;
+        height: 72px; 
+        border-radius: 50%;
+    }
+    & &__icon--color-green {background-color: var(--card-color-icon-one);}
+    & &__icon--color-blue {background-color: var(--card-color-icon-two);}
+    & &__icon--color-yellow {background-color: var(--card-color-icon-three);}
+
+    & &__icon-img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%) translateY(-50%);
+    }
+
+    & &__banner {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    & &__banner-title {
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 0;
+        line-height: 38px;
+        //margin-top: 24px;
+        margin-bottom: 0;
+    }
+
+    & &__banner-desc {
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 22px;
+        margin-top: 0;
+        margin-bottom: 24px;
+        font-weight: 400;
+    }
+
+    & &__btn {
+        background-color: #FFF;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 200px;
+        gap: 6px;
+        padding: 14px 19px 15px 24px;   
+        width: 89px;
+        height: auto;
+    }
+
+    & &__btn-wrapper {
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+
+    & &__btn-link {
+        transition: 2s;
+        align-items: center;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    & &__btn-link:link {
+        color: var(--color-on-surface);
+        background-color: var(-color-white);
+    }
+
+    & &__btn-link:hover {
+        color: var(--btn-link-color)
+    }
+    & &__btn-link:visited {
+        color: var(--btn-link-color);
+        background-color:  var(--btn-link-active-color);
+    }
+
+    
+    @media (max-width:992px) {
+        padding: 120px 41px 106px 41px;
+
+        & &__wrapper {
+            flex-direction: column;
+        }
+        & &__card {
+            width: auto;
+            padding: 24px;
+        }
+
+        & &__banner {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            height: auto;
+        }
+
+        & &__banner-title {
+            margin-top: 16px;
+        }
+    
+        & &__banner-desc {
+            margin-bottom: 16px;
+        }
+    }
+
+    @media (max-width:575px){ 
+        padding: 21px 16px 20px 16px;
+        
+        & &__card {
+            height: auto;
+            padding: 24px 16px;
+        }
+        & &__icon {
+            width: 48px;
+            height: 48px;
+        }
+
+        & &__banner {
+            gap: 8px;
+        }
+        & &__banner-title {
+            margin-top: 16px;
+            font-size: 26px;
+            line-height: 31px;
+        }
+        & &__banner-desc {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+        & &__icon-img {
+            width: 50%;
+            height: auto;
+        }
+        & &__btn {
+            margin-top: 16px;
+        }
+    }
+}
